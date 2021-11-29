@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="widget" class="widget">
+        <nav id="navbar">
+            <button class="settings-icon"></button>
+            <article class="row">
+                <span class="star-icon"></span>
+                <h3>Favorite location</h3>
+                <span class="info-icon"></span>
+            </article>
+        </nav>
+        <main class="content">
+            <button id="menu-btn" class="menu-icon" type="button"></button>
+            <header>
+                <div>
+                    <h1 class="current-temperature">55&deg;</h1>
+                    <h2 class="current-location">Austin <span class="location-icon"></span></h2>
+                    <h5 class="feels-like">71&deg; / 41&deg; Feels like 53&deg;</h5>
+                    <h5 class="current-time">Mon, 9:34 AM</h5>
+                </div>
+                <span class="sun_cloud-icon"></span>
+            </header>
+            <section class="card ten-day-forcast">
+                <article class="col">
+                    <p class="hour">10AM</p>
+                    <span class="sun-icon"></span>
+                    <p class="temp">62&deg;</p>
+                    <p class="chance-of-rain"><span class="raindrop-icon"></span>0%</p>
+                </article>
+                <article class="col">
+                    <p class="hour">11AM</p>
+                    <span class="sun-icon"></span>
+                    <p class="temp">65&deg;</p>
+                    <p class="chance-of-rain"><span class="raindrop-icon"></span>0%</p>
+                </article>
+                <article class="col">
+                    <p class="hour">12PM</p>
+                    <span class="sun-icon"></span>
+                    <p class="temp">67&deg;</p>
+                    <p class="chance-of-rain"><span class="raindrop-icon"></span>0%</p>
+                </article>
+                <article class="col">
+                    <p class="hour">1PM</p>
+                    <span class="sun-icon"></span>
+                    <p class="temp">69&deg;</p>
+                    <p class="chance-of-rain"><span class="raindrop-icon"></span>0%</p>
+                </article>
+                <article class="col">
+                    <p class="hour">2PM</p>
+                    <span class="sun-icon"></span>
+                    <p class="temp">69&deg;</p>
+                    <p class="chance-of-rain"><span class="raindrop-icon"></span>0%</p>
+                </article>
+                <article class="col">
+                    <p class="hour">3PM</p>
+                    <span class="sun-icon"></span>
+                    <p class="temp">68&deg;</p>
+                    <p class="chance-of-rain"><span class="raindrop-icon"></span>0%</p>
+                </article>
+            </section>
+            <section class="card covid">
+                <h4>COVID-19 in Texas <span>2,121 </span></h4>
+                <p><strong>Sources</strong> As of 2021-11-20</p>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+            <section class="card weekly-forcast">
+                <article class="row">
+                    <h3>Yesterday</h3>
+                    <h3>77&deg; 51&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Today</h3>
+                    <p><span class="raindrop-icon"></span>0%</p>
+                    <span class="sun-icon"></span>
+                    <h3>71&deg; 41&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Tuesday</h3>
+                    <p><span class="raindrop-icon"></span>2%</p>
+                    <span class="sun_cloud-icon_alt"></span>
+                    <h3>71&deg; 55&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Wednesday</h3>
+                    <p><span class="raindrop-icon"></span>46%</p>
+                    <span class="moon_cloud-icon"></span>
+                    <h3>78&deg; 60&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Thursday</h3>
+                    <p><span class="raindrop-icon"></span>95%</p>
+                    <span class="sun_cloud-icon_alt"></span>
+                    <h3>63&deg; 42&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Friday</h3>
+                    <p><span class="raindrop-icon"></span>12%</p>
+                    <span class="sun_cloud-icon_alt"></span>
+                    <h3>58&deg; 44&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Saturday</h3>
+                    <p><span class="raindrop-icon"></span>50%</p>
+                    <span class="sun_cloud-icon_alt"></span>
+                    <h3>65&deg; 51&deg;</h3>
+                </article>
+                <article class="row">
+                    <h3>Sunday</h3>
+                    <p><span class="raindrop-icon"></span>24%</p>
+                    <span class="cloud-icon"></span>
+                    <h3>65&deg; 45&deg;</h3>
+                </article>
+            </section>
+            <section class="card sunrise-sunset">
+                <article class="col">
+                    <h3>Sunrise</h3>
+                    <h3>7:02 AM</h3>
+                    <span class="sunrise-icon"></span>
+                </article>
+                <article class="col">
+                    <h3>Sunset</h3>
+                    <h3>5:32 PM</h3>
+                    <span class="sunset-icon"></span>
+                </article>
+            </section>
+            <section class="card conditions">
+                <article class="col">
+                    <span class="sun-icon"></span>
+                    <h3>UV index</h3>
+                    <h3>Moderate</h3>
+                </article>
+                <article class="col">
+                    <span class="wind-icon"></span>
+                    <h3>Wind</h3>
+                    <h3>7 mph</h3>
+                </article>
+                <article class="col">
+                    <span class="raindrop-icon"></span>
+                    <h3>Humidity</h3>
+                    <h3>36%</h3>
+                </article>
+            </section>
+            <section class="card radar">
+                <h3>Radar and maps</h3>
+                <figure>
+                    <img src="images/radar.webp" alt="Radar map">
+                </figure>
+            </section>
+            <section class="card todays-stories">
+                <h3>Today's stories <span class="chevron-icon"></span></h3>
+                <article class="row">
+                    <article class="col">
+                        <figure>
+                            <img src="images/image-1.webp" alt="Story 1">
+                            <figcaption>Climate change is muting fall colors</figcaption>
+                        </figure>
+                    </article>
+                    <article class="col">
+                        <figure>
+                            <img src="images/image-2.webp" alt="Story 2">
+                            <figcaption>Coral-damaging sunscreens banned</figcaption>
+                        </figure>
+                    </article>
+                </article>
+            </section>
+            <section class="card videos">
+                <h3>Videos<span class="chevron-icon"></span></h3>
+                <article class="row">
+                    <article class="col">
+                        <figure>
+                            <img src="images/image-3.webp" alt="Video 1">
+                            <figcaption>Bear With Head Stuck in Container</figcaption>
+                        </figure>
+                    </article>
+                    <article class="col">
+                        <figure>
+                            <img src="images/image-4.webp" alt="Video 2">
+                            <figcaption>How Did Beer Get Into This Stream?</figcaption>
+                        </figure>
+                    </article>
+                </article>
+            </section>
+        </main>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
